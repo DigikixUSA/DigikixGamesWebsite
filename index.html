@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en-US" class="no-js">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- feature-detection trick for javascript: replaces .no-js with .js only if javascript is working -->
+    <script>(function (html) { html.className = html.className.replace(/\bno-js\b/, 'js') })(document.documentElement);</script>
+    <title>DigikiX Games &ndash; Creating indie games since 1996</title>
+    <link rel="stylesheet" href="css/main.css" />
+    
+</head>
+<body>
+    <noscript>
+        <style>
+            .parallax-bg {
+                background-attachment: scroll;
+                transform: none !important;
+            }
+        </style>
+    </noscript>
+
+    
+
+    <div class="parallax-container">
+        <div class="parallax-bg" id="parallax-bg"></div>
+        <header class="banner">
+            <img src="images\digilogo1b-2048x205.png" alt="Site Banner">
+        </header>
+        <div class="parallax-content">
+            DigikiX Games &ndash; Creating indie games since 1996
+        </div>
+    </div>
+
+    <div class="content">
+        <h1>Starman Run *Full Version* is back in production!</h1>
+        <p>This game was initially released as a one-level demo for itch.io&rsquo;s Metroidvania Month 21 game jam.&nbsp;</p>
+        <p>The full completed version is planned to include many more things such as:</p>
+        <ul>
+            <li>Redesigned first level</li>
+            <li>9 total levels</li>
+            <li>New enemies and bosses</li>
+            <li>New powerups</li>
+            <li>Expanded lore</li>
+        </ul>
+        <br />
+        <p>Download or play the Demo version in your browser here:</p>
+        <iframe frameborder="0" src="https://itch.io/embed/2260652" width="552" height="167"><a href="https://dantine.itch.io/starman-run-sc-1">Starman Run SC-1 by Dantine</a></iframe>
+        <br />
+        <p>Here are some screenshots:</p>
+        <br />
+        <img src="images/screenshot4.jpg" alt="screenshot 4">
+        <br />
+        <img src="images/screenshot3.jpg" alt="screenshot 3">
+        <br />
+        <img src="images/screenshot2.jpg" alt="screenshot 2">
+        <br />
+        <img src="images/screenshot1.jpg" alt="screenshot 1">
+        <br />
+        </p>
+        <p style="height: 1000px;"></p> <!--Extra space to leave more room for scrolling-->
+        <p><a href="https://www.freepik.com/photos/background">Background photo created by wirestock - www.freepik.com</a></p>
+        <p>All original content copyright 2023 Digikix Games. The Digikix<sup>TM</sup> name is a trademark of Digikix Games.</p>
+    </div>
+
+    <!--script-- src="js/parallax.js"></!--script-->
+    <script>
+        const bg = document.getElementById('parallax-bg');
+
+        window.addEventListener('scroll', () => {
+            const scrollY = window.scrollY;
+            // Move background at half the scroll speed
+            bg.style.transform = `translateY(${scrollY * 0.5}px)`;
+        });
+    </script>
+
+</body>
+</html>
